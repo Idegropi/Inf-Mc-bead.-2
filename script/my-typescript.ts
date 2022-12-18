@@ -1,0 +1,22 @@
+function paralelogrammaTerulet(a: number, b: number, c: number): number{
+    console.log("paralelogrammaTerulet")
+    return a * b * Math.sin(c/180*Math.PI)
+}
+
+function paralelogrammaTerulet1(a: number, ma: number): number{
+    console.log("paralelogrammaTerulet1")
+    return a * ma
+}
+
+function randomStrings(array: string[]): string[]{
+    var res: string[] = []
+    for (let index = 0; index < 3; index++) {
+        res.push(array[randomIndex(array.length)])
+    }
+
+    return res
+}
+
+function randomIndex(len: number): number{
+   return  Math.floor(Math.random() * (len+1))
+}

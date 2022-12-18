@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="./style/main.css">
+    <script src="./script/my-typescript.js"></script>
+    <title>My html 😼</title>
+</head>
+<body>
+
+<h1>Welcome to my Html</h1>
+
+<div class="container">
+    <p>My cats</p>
+    <div class="gallery">
+        <img src="./img/uborka.jpg" alt="Uborka" width="600" height="400">
+        <div class="desc">Add a description of the image here</div>
+    </div>
+    <div class="gallery">
+        <img src="./img/zalan01.jpg" alt="Zalán" width="600" height="400">
+        <div class="desc">Add a description of the image here</div>
+    </div>
+    <div class="gallery">
+        <img src="./img/picur.jpg" alt="Picúr" width="600" height="400">
+    <div class="desc">Add a description of the image here</div>
+    </div>
+    <div class="gallery">
+        <img src="./img/rozi.jpg" alt="Rozi" width="600" height="400">
+    <div class="desc">Add a description of the image here</div>
+    </div>
+    <div class="gallery">
+        <img src="./img/janos.JPG" alt="János" width="600" height="400">
+    <div class="desc">Add a description of the image here</div>
+    </div>
+    <div class="gallery">
+        <img src="./img/zalan02.jpg" alt="Zalán" width="600" height="400">
+    <div class="desc">Add a description of the image here</div>
+    </div>
+</div>
+
+<div class="clearfix"></div>
+<hr>
+
+<div class="container">
+    <img src="https://matek4u.hu/wp-content/uploads/2019/11/paralelogramma-terulete-kerulete.jpg" alt="paralelogramma" width="300" height="200" style="float: right;">
+    <p>A paralelogramma területe számláló</p>
+    
+    <div>
+        a :  <input type="number" id="a"><br>
+        b :  <input type="number" id="b"><br>
+        α :  <input type="number" id="c"><br><br>
+        ma: <input type="number" id="m"><br><br>
+        <button onclick="calcA()">T1</button><input type="number" id="t1" disabled><br>
+        <button onclick="calcB()">T2</button><input type="number" id="t2" disabled><br>
+    </div>
+</div>
+
+</body>
+
+<script>
+function calcA() {
+    var a = document.getElementById("a").value
+    var b = document.getElementById("b").value
+    var c = document.getElementById("c").value 
+
+    document.getElementById("t1").value  = paralelogrammaTerulet(a, b, c)
+}
+function calcB() {
+    var a = document.getElementById("a").value
+    var ma = document.getElementById("m").value
+
+    document.getElementById("t2").value  = paralelogrammaTerulet1(a, ma)
+}
+</script>
+</html>
