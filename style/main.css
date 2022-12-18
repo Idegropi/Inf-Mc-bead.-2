@@ -17,6 +17,9 @@ div.gallery {
     border: 1px solid #ccc;
     float: left;
     width: 180px;
+    border-radius: 10px;
+    overflow: hidden;
+    background-color: rgb(176, 176, 236);
 }
 
 div.gallery:hover {
