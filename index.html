@@ -54,6 +54,20 @@
     </div>
 </div>
 
+<div class="clearfix"></div>
+<hr>
+
+<div class="container">
+    <p>Random strings</p>
+    
+    <div>
+        Sorolj fel sztringek ";"-vel elválasztva<br>
+        <input type="text" id="text-in"><br>
+        <button onclick="randString()">Random</button><br>
+        <textarea id="text-out" rows="3" cols="20" disabled></textarea>
+    </div>
+</div>
+
 </body>
 
 <script>
@@ -69,6 +83,11 @@ function calcB() {
     var ma = document.getElementById("m").value
 
     document.getElementById("t2").value  = paralelogrammaTerulet1(a, ma)
+}
+
+function randString(){
+    var input = document.getElementById("text-in").value
+    document.getElementById("text-out").value  = randomStringsToString(input)
 }
 </script>
 </html>
