@@ -8,6 +8,12 @@ function paralelogrammaTerulet1(a: number, ma: number): number{
     return a * ma
 }
 
+function randomStringsToString(input: string): string{
+    var res = randomStrings(input.split(";"))
+
+    return res[0] + "\n" + res[1] + "\n" + res[2]
+}
+
 function randomStrings(array: string[]): string[]{
     var res: string[] = []
     for (let index = 0; index < 3; index++) {
@@ -18,5 +24,5 @@ function randomStrings(array: string[]): string[]{
 }
 
 function randomIndex(len: number): number{
-   return  Math.floor(Math.random() * (len+1))
+   return  Math.floor(Math.random() * (len))
 }
